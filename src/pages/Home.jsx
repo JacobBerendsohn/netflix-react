@@ -12,7 +12,6 @@ const Home = () => {
             <Row title='Top Rated' fetchURL={requests.requestTopRated} />
             <Row title='Trending' fetchURL={requests.requestTrending} />
         </>
-    )
-}
-
+    );
+};
 export default Home
