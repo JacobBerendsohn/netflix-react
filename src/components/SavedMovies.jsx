@@ -9,7 +9,7 @@ const SavedMovies = () => {
 
     const [movies, setMovies] = useState([]);
     const { user } = UserAuth();
-    const movieRef = doc(db, 'users', `${user?.email}`);
+    const movieRef = doc(db, 'users', `${user?.email}`)
 
     const slideLeft = () => {
         var slider = document.getElementById('slider');
@@ -36,7 +36,7 @@ const SavedMovies = () => {
         } catch (error) {
             console.log(error);
         }
-    };
+    }
 
     return (
         <>

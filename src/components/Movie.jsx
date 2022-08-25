@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaHeart, FaRegHeart } from 'react-icons/fa';
 import { UserAuth } from '../context/AuthContext';
 import { db } from '../firebase';
-import { arrayUnion, doc, updateDoc } from 'firebase/firestore'
+import { arrayUnion, doc, updateDoc } from 'firebase/firestore';
 
 export const Movie = ({ item }) => {
 
@@ -24,7 +24,7 @@ export const Movie = ({ item }) => {
                 }),
             });
         } else {
-            alert('Log in to add a movie to favorites')
+            alert('Please login to add a movie to your favorites.')
         }
     };
 

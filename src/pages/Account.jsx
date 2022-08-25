@@ -1,5 +1,5 @@
-import React from 'react'
-import SavedMovies from '../components/SavedMovies'
+import React from 'react';
+import SavedMovies from '../components/SavedMovies';
 
 const Account = () => {
     return (

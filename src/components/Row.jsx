@@ -5,23 +5,23 @@ import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
 const Row = ({ title, fetchURL, rowID }) => {
 
-    const [movies, setMovies] = useState([])
+    const [movies, setMovies] = useState([]);
 
     useEffect(() => {
         axios.get(fetchURL).then((response) => {
             setMovies(response.data.results)
         })
-    }, [fetchURL])
+    }, [fetchURL]);
 
     const slideLeft = () => {
         var slider = document.getElementById('slider' + rowID);
         slider.scrollLeft = slider.scrollLeft - 500;
-    }
+    };
 
     const slideRight = () => {
         var slider = document.getElementById('slider' + rowID);
         slider.scrollLeft = slider.scrollLeft + 500;
-    }
+    };
 
     return (
         <>
@@ -39,4 +39,4 @@ const Row = ({ title, fetchURL, rowID }) => {
     );
 };
 
-export default Row
+export default Row;
